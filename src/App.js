@@ -10,7 +10,9 @@ export default function App() {
 
   return (
     <div className="App">
-      <input type="button" onClick={(e) => dispatch(2)} value={counter} />
+      <h1>{counter}</h1>
+      <input type="button" onClick={(e) => dispatch(1)} value="+" />
+      <input type="button" onClick={(e) => dispatch(-1)} value="-" />
     </div>
   );
 }
